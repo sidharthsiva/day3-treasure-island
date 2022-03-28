@@ -27,3 +27,23 @@ print("Your mission is to find the treasure.")
 
 #Write your code below this line 👇
 
+condition1 = input(print("Now which way you want to go, left ? or right? "))
+
+if (condition1.lower()) == "left":
+  print("Now there is a lake in front of you")
+  condition2 = input(print("What you want to do now, either you want to 'swim' and cross the lake? or 'wait' for boat?"))
+  if (condition2.lower())=="wait":
+    print("Boat came and helped you to cross the lake.")
+    condition3 = input(print("Last stage, there are three doors infront of you! which one do you want to open? red? or yellow? or blue?"))
+    if (condition3.lower()) == "red":
+      print("It was an volcano and you got burnt to death. Game Over")
+    elif (condition3.lower()) == "blue":
+      print("There was deadly pirahana made you as their dinner. Game Over")
+    elif (condition3.lower()) == "yellow":
+      print("The room is filled with gold. Treasure found! Mission Accomplished")
+    else:
+      print("Chose a wrong way, so you are dead. Game Over")
+  else:
+    print("Shark in the lake ate you for lunch. Game Over.")
+else:
+  print("You slipped into a hole. Game Over.")
